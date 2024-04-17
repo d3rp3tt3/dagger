@@ -127,9 +127,77 @@ const config: Config = {
       },
       items: [
         {
-          position: "right",
+          type: "dropdown",
+          label: "Platform",
+          position: "left",
+          className: "navbar-blog-link",
+          items: [
+            {
+              label: "Dagger Engine",
+              to: "https://dagger.io/",
+              target: "_self",
+            },
+            {
+              label: "Dagger Cloud",
+              to: "https://dagger.io/",
+              target: "_self",
+            },
+            {
+              label: "Integrations",
+              to: "https://dagger.io/integrations",
+              target: "_self",
+            },
+            {
+              label: "Pricing",
+              to: "https://dagger.io/pricing",
+              target: "_self",
+            }
+          ],
+        },
+        {
+          position: "left",
+          to: "https://daggerverse.dev",
+          target: "_self",
+          label: "Daggerverse",
+          className: "navbar-blog-link",
+        },
+        {
+          position: "left",
+          to: "https://dagger.io/resources",
+          label: "Resources",
+          target: "_self",
+          className: "navbar-blog-link",
+        },
+        {
+          type: "dropdown",
+          label: "Community",
+          position: "left",
+          className: "navbar-blog-link",
+          items: [
+            {
+              label: "Get Involved",
+              to: "https://dagger.io/community",
+              target: "_self",
+            },
+            {
+              label: "Dagger Love",
+              to: "https://dagger.io/dagger-love",
+              target: "_self",
+            },
+          ],
+        },
+        {
+          position: "left",
+          to: "https://docs.dagger.io",
+          label: "Docs",
+          target: "_self",
+          className: "navbar-blog-link",
+        },
+        {
+          position: "left",
           to: "https://dagger.io/blog",
           label: "Blog",
+          target: "_self",
           className: "navbar-blog-link",
         },
         {
